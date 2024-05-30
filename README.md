@@ -1,7 +1,4 @@
-
 <img align="right" alt="Coding" width="300" src="https://media.istockphoto.com/vectors/health-insurance-icon-logo-vector-graphic-design-hands-and-red-cross-vector-id1029378270?k=6&m=1029378270&s=170667a&w=0&h=ZtXSIngZaI92T8bqka1adP3GJWhdMbfbCGtk0buGyzQ=">
-
-
 
 # Health Insurance Cost Prediction✅
 
