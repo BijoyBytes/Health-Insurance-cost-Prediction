@@ -3,9 +3,9 @@
 
 
 
-# Health Insurance Cost Prediction
+# Health Insurance Cost Prediction✅
 
-### This repository contains a machine learning project for predicting health insurance costs based on various factors such as age, BMI, smoking status, and more. The project uses a dataset to train a predictive model for estimating individuals' insurance charges✅📈
+### This repository contains a machine learning project for predicting health insurance costs based on various factors such as age, BMI, smoking status, and more. The project uses a dataset to train a predictive model for estimating individuals' insurance charges
 
 
 ## Acknowledgements
