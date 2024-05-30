@@ -3,12 +3,12 @@
 # Insurance Cost Prediction
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ## Overview
 This project aims to predict insurance costs using machine learning techniques. The dataset used contains information about the insured individuals and their respective charges. By analyzing these data points, the model can predict future insurance costs based on new inputs.
-<img align="right" alt="Coding" width="500" src="https://media.istockphoto.com/vectors/health-insurance-icon-logo-vector-graphic-design-hands-and-red-cross-vector-id1029378270?k=6&m=1029378270&s=170667a&w=0&h=ZtXSIngZaI92T8bqka1adP3GJWhdMbfbCGtk0buGyzQ=">
+
+<img align="right" alt="Coding" width="400" src="https://media.istockphoto.com/vectors/health-insurance-icon-logo-vector-graphic-design-hands-and-red-cross-vector-id1029378270?k=6&m=1029378270&s=170667a&w=0&h=ZtXSIngZaI92T8bqka1adP3GJWhdMbfbCGtk0buGyzQ=">
 
 
 ## Table of Contents
@@ -22,7 +22,7 @@ This project aims to predict insurance costs using machine learning techniques. 
 - [License](#license)
 
 ## Introduction
-Insurance cost prediction is a crucial task for insurance companies to estimate potential costs and set premiums accordingly. This project utilizes a dataset with demographic information such as age, sex, BMI, children, smoking status, and region to predict insurance charges.
+Predicting insurance costs is essential for insurance companies to accurately estimate potential expenses and determine appropriate premiums. This project uses a dataset containing demographic information including age, sex, BMI, number of children, smoking status, and region to forecast insurance charges.
 
 ## Features
 - Data cleaning and preprocessing
