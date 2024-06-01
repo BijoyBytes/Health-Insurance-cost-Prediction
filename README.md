@@ -1,6 +1,6 @@
 
 
-# Insurance Cost Prediction
+# Health Insurance Cost Prediction✅📈
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
@@ -15,20 +15,18 @@ This project aims to predict insurance costs using machine learning techniques. 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Data](#data)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
+- [Analysis](#analysis)
+- [Learning](#learning)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
 Predicting insurance costs is essential for insurance companies to accurately estimate potential expenses and determine appropriate premiums. This project uses a dataset containing demographic information including age, sex, BMI, number of children, smoking status, and region to forecast insurance charges.
 
-- **OBJECTIVE:**
+- **Project Objective:**
 
    **1.** Create a Prediction model that can predict  _[Health insurance cost](https://github.com/graphical-Analysis/Health-Insurance-cost-Prediction/blob/main/Health%20Insurance%20cost%20Prediction.ipynb)_ 
 
-Creat a model that can predict the cost of health insurance based on ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] parameter
+Create a model that can predict the cost of health insurance based on ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] parameter
 Observation:
 
 ## Features
@@ -128,29 +126,20 @@ model.score(x_test,y_test) 0.8068466322629112
 
 ### Model accuracy is 80%
 
+## Learning:
+- [x]	Proficiency in ETL methodology (Extract, Transform, Load).
+- [x]	Data cleaning and preprocessing
+- [x]	Business Understanding
+
+
 ## Acknowledgements
 
  - The dataset used in this project is sourced from [Kaggle.](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
  - This project is inspired by various machine learning tutorials and courses available on YouTube[.]()
 
-- **Project objective:** 
-
-    **1.** Create a _[customer performance report](https://github.com/KirandeepMarala/Excel-Sales_Analysis/blob/main/Customer%20Performance%20Report.pdf)_ 
-
-    **2.** Conduct a comprehensive comparison between _[market performance and sales targets](https://github.com/KirandeepMarala/Excel-Sales_Analysis/blob/main/Customer%20Performance%20Report.pdf)_
-
-- **Purpose of sales analytics:** Empower businesses to monitor and evaluate their sales activities and performance.
-
-- **Importance of analyzing sales data:** Identify sales patterns and track key performance indicators (KPIs).
-
-- **Role of reports:** Determine effective customer discounts, facilitate negotiations with consumers, and identify potential business expansion opportunities in promising countries.
 
 
-## Technical & Soft Skills:
-- [x]	Proficiency in ETL methodology (Extract, Transform, Load).
-- [x]	Skills to generate a date table using Power Query.
-- [x]	Ability to derive fiscal months and quarters.
-- [x]	Establishing data model relationships with Power Pivot.
-- [x]	Proficiency in incorporating supplementary data into an existing data model.
-- [x]	Utilizing DAX to create calculated columns.
+
+
+
 
