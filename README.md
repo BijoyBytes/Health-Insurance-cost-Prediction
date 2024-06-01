@@ -19,10 +19,17 @@ This project aims to predict insurance costs using machine learning techniques. 
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 Predicting insurance costs is essential for insurance companies to accurately estimate potential expenses and determine appropriate premiums. This project uses a dataset containing demographic information including age, sex, BMI, number of children, smoking status, and region to forecast insurance charges.
+
+- **OBJECTIVE:**
+
+   **1.** Create a Prediction model that can predict  _[Health insurance cost](https://github.com/graphical-Analysis/Health-Insurance-cost-Prediction/blob/main/Health%20Insurance%20cost%20Prediction.ipynb)_ 
+
+Creat a model that can predict the cost of health insurance based on ['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'] parameter
+Observation:
 
 ## Features
 - Data cleaning and preprocessing
@@ -36,58 +43,114 @@ Predicting insurance costs is essential for insurance companies to accurately es
 The dataset used in this project can be found [here](https://www.kaggle.com/mirichoi0218/insurance). It contains the following columns:
 - `age`: Age of the primary beneficiary
 - `sex`: Gender of the beneficiary (male/female)
-- `bmi`: Body Mass Index
+- `BMI`: Body Mass Index
 - `children`: Number of children/dependents covered by health insurance
 - `smoker`: Smoking status (yes/no)
 - `region`: Residential area in the US (northeast, southeast, southwest, northwest)
 - `charges`: Individual medical costs billed by health insurance
 
-## Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/insurance-cost-prediction.git
-    cd insurance-cost-prediction
-    ```
+## Analysis
 
-2. Create and activate a virtual environment:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-    ```
+- **1. In this data, we have 7 columns which are:**
+  
+['age', 'sex', 'BMI', 'children', 'smoker', 'region', 'charges']
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Numerical columns in the data:['age', 'BMI', 'children', 'charges']
 
-## Usage
-1. **Data Preprocessing and Exploration**:
-    ```python
-    python data_preprocessing.py
-    ```
+Categorical columns in the data:['sex', 'smoker', 'region']
 
-2. **Model Training**:
-    ```python
-    python train_model.py
-    ```
+- **2. Male and Female count**
+  
+sex male(1) 675
+female(0) 662
 
-3. **Model Evaluation**:
-    ```python
-    python evaluate_model.py
-    ```
+There are 675 Males and 662 Females Here Males are denoted by "1" and Females are denoted by "0"
 
-4. **Prediction**:
-    You can use the `predict.py` script to make predictions on new data:
-    ```python
-    python predict.py --input data/new_data.csv --output results/predictions.csv
-    ```
-
-## Project Structure
+- **3.% of children's distribution**
+  
 
 
+| Children| %    |
+| :-------- | :------- |
+| 0 | `42.86%` |
+| 1 | `24.23%` |
+| 2 | `17.95%` |
+| 3 | `11.74%` |
+| 4 | `1.87%` |
+| 5 | `1.35%` |
+
+
+In our data set, among those who have taken insurance 42% people have no child, 24% people only have only one child, 17% people have two children, 11% people have 3 children
+
+- **4.Charges Distibution**
+
+  
+Most of the insurance costs in our data set are between 0 to 10000
+
+- **5.Region wise distibution**
+  
+In the data set contains 4 types of regions which are "Southeast", "Southwest", "Northeast","Northwest" but the amount of "south-east" regions is high as compared to the other areas and also the cost of insurance is high in "south-east" region
+
+| Region | Charges    |
+| :-------- | :------- |
+| northeast(0) | `13406.384516` |
+| northwest(1) | `12450.840844` |
+| southeast(2) | `14735.411438` |
+| southwest(3) | `12346.937377` |
+
+
+- **6. Insurance costs for smokers and non-smokers**
+  
+In the case of smokers, the insurance cost is so high and non-smokers have lower insurance rates although in our data set the number of non-smokers is high
+
+smoker 
+
+no (0) 1063
+
+yes (1) 274 
+
+Here non-smokers are denoted by "0" and smokers are denoted by "1"
+
+- **7. Create a Prediction model**
+  
+I have used a "LinearRegression()" model to predict our data. At first, I split my data into training and testing. I used 80% of our data for training and the remaining 20% for testing
+
+Then I try to predict as a user input that is
+
+age=21, sex= 0(Female), bmi=25.8000, children= 0, smoker=0(non-smoaker"), region=3("southwest")
+
+ans=model.predict([[21,0,25.800,0,0,3]]) print("your Insurance cost is", ans)
+
+Your insurance cost is [1528.79685196]
+
+
+model.score(x_test,y_test) 0.8068466322629112
+
+### Model accuracy is 80%
 
 ## Acknowledgements
 
  - The dataset used in this project is sourced from [Kaggle.](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
  - This project is inspired by various machine learning tutorials and courses available on YouTube[.]()
+
+- **Project objective:** 
+
+    **1.** Create a _[customer performance report](https://github.com/KirandeepMarala/Excel-Sales_Analysis/blob/main/Customer%20Performance%20Report.pdf)_ 
+
+    **2.** Conduct a comprehensive comparison between _[market performance and sales targets](https://github.com/KirandeepMarala/Excel-Sales_Analysis/blob/main/Customer%20Performance%20Report.pdf)_
+
+- **Purpose of sales analytics:** Empower businesses to monitor and evaluate their sales activities and performance.
+
+- **Importance of analyzing sales data:** Identify sales patterns and track key performance indicators (KPIs).
+
+- **Role of reports:** Determine effective customer discounts, facilitate negotiations with consumers, and identify potential business expansion opportunities in promising countries.
+
+
+## Technical & Soft Skills:
+- [x]	Proficiency in ETL methodology (Extract, Transform, Load).
+- [x]	Skills to generate a date table using Power Query.
+- [x]	Ability to derive fiscal months and quarters.
+- [x]	Establishing data model relationships with Power Pivot.
+- [x]	Proficiency in incorporating supplementary data into an existing data model.
+- [x]	Utilizing DAX to create calculated columns.
 
